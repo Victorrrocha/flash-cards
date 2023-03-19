@@ -97,8 +97,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "flash-cards:build:production",
+            "firebaseProject": "flash-cards-2bd41",
+            "firebaseHostingSite": "flash-cards-2bd41"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -1,0 +1,52 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    min-width: 350px;
+    height: 500px;
+
+    &__side {
+        max-height: 70vh;
+        width: 90%;
+        height: 500px;
+        min-width: 350px;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        padding: 1rem;
+        background-color: white;
+        filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+
+        &--front {
+            background-color: white;
+        }
+
+        &--back {
+            background-color: white;
+        }
+    }
+
+    &__rotate {
+        &--front {
+            transform: rotateY(180deg);
+        }
+
+        &--back {
+            transform: rotateY(-180deg);
+        }
+    }
+}
+
+.nextBtn {
+    position: absolute;
+    bottom: 1rem;
+}

@@ -1,0 +1,11 @@
+<div class="card" (click)="rotateCard()">
+    <div class="card__side card__side--front" [ngClass]="{'card__rotate--front' : facingFront}">
+        {{card?.front}}
+    </div>
+    <div class="card__side card__side--back delay" [ngClass]="{'card__rotate--back' : !facingFront}">
+        <div>
+            {{card?.back}}
+        </div>
+        <button (click)="next()" class="nextBtn bg-primary rounded-lg w-[90%] py-1 text-white shadow">Next</button>
+    </div>
+</div>

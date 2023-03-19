@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "flash-cards-2bd41": {
+      "hosting": {
+        "flash-cards": [
+          "flash-cards-2bd41"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "flash-cards-2bd41"
+  }
+}
